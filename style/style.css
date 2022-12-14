@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+/* color for digit and text */
+#container {
+  color: silver;
+}
+
+.digit {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#btns-container {
+  text-align: center;
+  padding: 90px;
+}
+
+.buttons {
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+  border: 0;
+  border-radius: 5em;
+  cursor: pointer;
+}
+
+#start {
+  color: silver;
+  background-color: greenyellow;
+}
+
+#reset {
+  color: silver;
+  background-color: blue;
+}
+
+#stop {
+  color: silver;
+  background-color: red;
+}
+
+/* colon displaying none for large devices only display in small devices */
+.colon {
+  display: none;
+}
+
+/* media query for sm devices */
+@media only screen and (max-width: 499px) {
+  body {
+    background-color: black;
+    text-align: center;
+    width: 99vw;
+  }
+  .digit {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .text {
+    display: none;
+  }
+  .colon {
+    display: unset;
+    font-size: 50px;
+  }
+  #msec {
+    display: block;
+  }
+  #container {
+    margin-top: 40px;
+  }
+}
+
+/* media query for md devices */
+@media only screen and (max-width: 992px) {
+  body {
+    display: unset;
+    text-align: center;
+  }
+  .digit {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 25px;
+  }
+  #btns-container {
+    text-align: center;
+    padding: 50px;
+  }
+}
